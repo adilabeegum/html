@@ -1,5 +1,4 @@
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Light Bulb</title>
@@ -8,22 +7,26 @@
 
 <h2>Light Bulb ON/OFF</h2>
 
-<img id="bulb" src="bulboff.jpg" width="150" height="200">
+<img id="bulb" src="off.png" width="150" height="200">
 
 <br><br>
 
-<button onclick="changeBulb()">ON / OFF</button>
+<button id="btn">ON / OFF</button>
 
 <script>
-function changeBulb() {
-    var image = document.getElementById("bulb");
+    var bulb = document.getElementById("bulb");
+    var btn = document.getElementById("btn");
+    var isOn = false;
 
-    if (image.src.includes("bulboff.jpg")) {
-        image.src = "bulbon.jpg";
-    } else {
-        image.src = "bulboff.jpg";
-    }
-}
+    btn.addEventListener("click", function() {
+        if (isOn == false) {
+            bulb.src = "ON.png";
+            isOn = true;
+        } else {
+            bulb.src = "off.png";
+            isOn = false;
+        }
+    });
 </script>
 
 </body>
