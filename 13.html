@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Light Bulb</title>
+</head>
+<body>
+
+<h2>Light Bulb ON/OFF</h2>
+
+<img id="bulb" src="bulboff.jpg" width="150" height="200">
+
+<br><br>
+
+<button onclick="changeBulb()">ON / OFF</button>
+
+<script>
+function changeBulb() {
+    var image = document.getElementById("bulb");
+
+    if (image.src.includes("bulboff.jpg")) {
+        image.src = "bulbon.jpg";
+    } else {
+        image.src = "bulboff.jpg";
+    }
+}
+</script>
+
+</body>
+</html>
