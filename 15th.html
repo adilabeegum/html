@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <title>Student Registration Form</title>
@@ -12,7 +12,6 @@
 
         let valid = true;
 
-        // First Name Validation
         if (fname == "") {
             document.getElementById("fnameError").innerHTML = "First name is required";
             valid = false;
@@ -23,7 +22,6 @@
             document.getElementById("fnameError").innerHTML = "";
         }
 
-        // Last Name Validation
         if (lname == "") {
             document.getElementById("lnameError").innerHTML = "Last name is required";
             valid = false;
@@ -34,7 +32,6 @@
             document.getElementById("lnameError").innerHTML = "";
         }
 
-        // Email Validation
         if (email == "") {
             document.getElementById("emailError").innerHTML = "Email is required";
             valid = false;
@@ -44,8 +41,6 @@
         } else {
             document.getElementById("emailError").innerHTML = "";
         }
-
-        // Mobile Number Validation
         if (mobile == "") {
             document.getElementById("mobileError").innerHTML = "Mobile number is required";
             valid = false;
@@ -227,3 +222,4 @@
 
 </body>
 </html>
+
